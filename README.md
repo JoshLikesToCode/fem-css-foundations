@@ -45,7 +45,7 @@ main
 ```
 To check out a new branch run `git checkout [branch-name]` (i.e. `git checkout home`)
 
-## Editor Settings
+## 
 Below are the visual settings I use in my code editor.
 - **Font**: I’m using the font [Dank Mono](https://philpl.gumroad.com/l/dank-mono) with font ligatures. It’s a paid font for 24 GBP. I also recommend [Fira Code](https://github.com/tonsky/FiraCode) which is free.
 ![Dank Mono](./readme-images/dank-mono.png)

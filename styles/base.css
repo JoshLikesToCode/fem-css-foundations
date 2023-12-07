@@ -126,6 +126,15 @@ header img {
   padding: 150px;
 }
 
+.close {
+  display: none;
+}
+
+.menu,
+.close {
+  cursor: pointer;
+}
+
 @media (max-width: 1220px) {
   .button {
     font-size: 24px;
@@ -143,8 +152,42 @@ header img {
     display: block;
   }
 
-  .nav {
+  .menu--hide {
     display: none;
+  }
+
+  .body--no-scroll {
+    overflow: hidden;
+  }
+
+  .close--show {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-primary);
+    top: 60px;
+    left: -100%;
+    padding-top: 60px;
+    transition: left 0.2s linear;
+  }
+
+  .nav--visible {
+    left: 0px;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+  }
+
+  .nav__list-item {
+    font-size: 60px;
+    font-weight: bold;
   }
 
   .header {
